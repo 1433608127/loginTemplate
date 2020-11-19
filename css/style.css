@@ -17,5 +17,25 @@ p,a,li,span{color:#999}
 
 .mainBoxR{background-color: #fff;height:100%}
 
-.login{}
+.login{padding:30px;}
+/* 头部切换 */
+.login .loginCodeSwite{height:80px;}
 /* .login .loginCodeSwite{height:80px;} */
+
+/* 二维码登录 */
+.login .loginErcode{display: none;}
+/* 账号登录 */
+.login .loginWrite{}
+.login .loginWrite .loginTop{width:100%;display: flex;justify-content: center;}
+.loginTop .loginSwith li{ float: left;font-size: 20px;padding:15px;margin:10px;}
+.loginTop .loginSwith li.active{color:#333;position: relative;}
+.loginTop .loginSwith li.active::before{content: '';height:1px;width:40%;display: block;background-color: red;position: absolute;left:30%;bottom:5px}
+
+.login .loginContent{}
+.loginContent .inputBox{display: none;}
+.loginContent .inputBox.active{display:block;}
+.inputBox div{width:80%;margin:0 auto;position: relative;}
+.inputBox .account{margin-bottom:40px}
+.inputBox input{width:100%;border:none;border-bottom: 1px solid #999;height:40px;font-size: 16px;;}
+.inputBox input:focus{border-color:red;outline: none;}
+.inputBox p{position:absolute;bottom:8px;font-size: 16px;}
